@@ -23,10 +23,12 @@ assert property(p_reset_pslverr) else
 $error("Assertion Failed: PSLVERR is not 0 when PRESETn=0");
 
 property p_idle_case;
-  @(posedge PCLK)
-  disable iff(!PRESETn) !PSEL |-> !PENABLE;
+  @(posedge PCLK) disable iff(!PRESETn)
+    !PSEL |-> !PENABLE;
 endproperty
-assert property(p_idle_case) else $error("Assertion Failed: PENABLE asserted while PSEL is 0");
+assert property(p_idle_case)
+  else
+  $error("Assertion Failed: PENABLE asserted while PSEL is 0");
 
 property p_setup_to_access;
   @(posedge PCLK)
