@@ -1,0 +1,5 @@
+
+`define ADDR_WIDTH 9
+`define DATA_WIDTH 32
+`define MEM_DEPTH 256
+`define STRB_WIDTH (`DATA_WIDTH/8)
