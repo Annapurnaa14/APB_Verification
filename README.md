@@ -61,7 +61,7 @@ apb_assertions ── bound directly to apb_interface (independent protocol chec
 
 ## Verification Plan
 
-Verification tracking is maintained in `APB_Verification_Plan_AnnapurnaShenoy.xlsx`, with three sheets:
+Verification tracking is maintained with three sheets:
 - **Verification_Plan** — Functional test list 
 - **Assertion_Plan** — SVA protocol assertions 
 - **Coverage_Plan** — Functional coverpoints, including state transitions and cross-coverage.
