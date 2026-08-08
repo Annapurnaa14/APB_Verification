@@ -1,0 +1,30 @@
+QuestaSim vcover 10.6c Coverage Utility 2017.07 Jul 25 2017
+Start time: 21:26:54 on Jul 19,2026
+vcover report -assert -details coverage_results.ucdb
+ASSERTION RESULTS:
+-------------------------------------------------------
+Name                 File(Line)           Failure Pass
+                                          Count   Count
+-------------------------------------------------------
+/tb/dut/assertion_inst/assert__p_pstrb_byte_mask
+                     apb_assertions.sv(75)       0     9
+/tb/dut/assertion_inst/assert__p_pstrb_byte_write
+                     apb_assertions.sv(69)       0     0
+/tb/dut/assertion_inst/assert__p_pstrb_stable
+                     apb_assertions.sv(63)       0     9
+/tb/dut/assertion_inst/assert__p_pwdata_stable
+                     apb_assertions.sv(57)       0     9
+/tb/dut/assertion_inst/assert__p_pwrite_stable
+                     apb_assertions.sv(51)       0     9
+/tb/dut/assertion_inst/assert__p_addr_stable
+                     apb_assertions.sv(45)       0     0
+/tb/dut/assertion_inst/assert__p_setup_to_access
+                     apb_assertions.sv(39)       0     9
+/tb/dut/assertion_inst/assert__p_idle_case
+                     apb_assertions.sv(33)       0    16
+/tb/dut/assertion_inst/assert__p_reset_pslverr
+                     apb_assertions.sv(27)       3     0
+/tb/dut/assertion_inst/assert__p_data_reset
+                     apb_assertions.sv(21)       0     3
+End time: 21:26:54 on Jul 19,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
